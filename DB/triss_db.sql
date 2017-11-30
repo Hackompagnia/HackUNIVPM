@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Nov 30, 2017 alle 12:02
+-- Creato il: Nov 30, 2017 alle 12:34
 -- Versione del server: 10.1.28-MariaDB
 -- Versione PHP: 7.1.11
 
@@ -48,6 +48,13 @@ CREATE TABLE `customer` (
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dump dei dati per la tabella `customer`
+--
+
+INSERT INTO `customer` (`mail`, `token`, `data_reg`, `password`, `id`) VALUES
+('orteip_94@live.it', NULL, '2017-11-10', 'pietro123', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -65,6 +72,14 @@ CREATE TABLE `dealer` (
   `p_iva` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dump dei dati per la tabella `dealer`
+--
+
+INSERT INTO `dealer` (`nome`, `cognome`, `mail`, `password`, `token`, `id`, `nome_negozio`, `p_iva`) VALUES
+('Paolo', 'Rossi', 'paolo_rossi@gmail.com', 'paolo123', '', 1, 'Ciccionissimo', 123456),
+('Mario', 'Verdi', 'mario@gmail.com', 'mario123', '', 2, 'Marione', 345678);
+
 -- --------------------------------------------------------
 
 --
@@ -77,6 +92,14 @@ CREATE TABLE `list` (
   `mail` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dump dei dati per la tabella `list`
+--
+
+INSERT INTO `list` (`id`, `role`, `mail`) VALUES
+(1, 'dealer', 'paolo_rossi@gmail.com'),
+(1, 'customer', 'orteip_94@live.it');
+
 -- --------------------------------------------------------
 
 --
@@ -88,10 +111,20 @@ CREATE TABLE `receipt` (
   `id_dealer` int(11) NOT NULL,
   `data_acquisto` date NOT NULL,
   `id_scontrino` int(11) NOT NULL,
-  `prodotto` text NOT NULL,
+  `prodotto` varchar(30) NOT NULL,
   `prezzo` double NOT NULL,
-  `sf_numero` int(11) NOT NULL
+  `sf_numero` int(11) NOT NULL,
+  `ora` time NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dump dei dati per la tabella `receipt`
+--
+
+INSERT INTO `receipt` (`id_customer`, `id_dealer`, `data_acquisto`, `id_scontrino`, `prodotto`, `prezzo`, `sf_numero`, `ora`) VALUES
+(1, 1, '2017-11-30', 1, 'Lavatrice', 100, 1, '12:20:00'),
+(1, 1, '2017-11-30', 2, 'TV', 250, 1, '12:20:00'),
+(1, 2, '2017-11-25', 3, 'Playstation 4', 230, 3, '17:00:00');
 
 -- --------------------------------------------------------
 
@@ -156,19 +189,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT per la tabella `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT per la tabella `dealer`
 --
 ALTER TABLE `dealer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT per la tabella `receipt`
 --
 ALTER TABLE `receipt`
-  MODIFY `id_scontrino` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_scontrino` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT per la tabella `staff`
