@@ -27,6 +27,19 @@ Il commerciante avrà un tablet e/o uno smartphone collegato alla sua cassa che,
 
 <img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Img/comunicazione%20applicazione.jpg"/>
 
+In totale ci saranno due applicazioni:una web app che girerà su qualsiasi dispositivo tramite pagina web e servirà per l'accesso, la registrazione e gli eventuali visualizzazioni degli scontrini e fatture, in base al tipo di account.
+Si è previsto 4 tipi di utenze, due che gestiscono l'intero sistema:
+<ul>
+  <li>Admin</li>
+  <li>Staff</>
+</ul>
+  
+e due che usufruiscono del servizio:
+<ul>
+  <li>Customer</li>
+  <li>Dealer</li>
+</ul>
+
 
 
 <a href="https://developer.android.com/studio/index.html"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/android_studio_logo.jpg"/></a><a href="https://it.wikipedia.org/wiki/Near_Field_Communication"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/logo_nfc_2.png"/></a><a href="http://www.univpm.it/Entra/"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/univpm_logo_2.gif"/></a><a href="https://framework.zend.com/"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/zend_logo.png"/></a><a href="https://www.phpmyadmin.net/"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/logo_phpmyadmin.png"/></a>
