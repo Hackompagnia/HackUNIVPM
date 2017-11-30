@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Creato il: Nov 30, 2017 alle 13:09
+-- Creato il: Nov 30, 2017 alle 13:44
 -- Versione del server: 5.5.56-MariaDB
 -- Versione PHP: 5.4.16
 
@@ -76,29 +76,6 @@ INSERT INTO `dealer` (`nome`, `cognome`, `id`, `nome_negozio`, `p_iva`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struttura della tabella `list`
---
-
-CREATE TABLE IF NOT EXISTS `list` (
-  `role` varchar(10) NOT NULL,
-  `mail` varchar(30) NOT NULL,
-  `id` int(11) NOT NULL,
-  `data_reg` date NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `token` varchar(10) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
---
--- Dump dei dati per la tabella `list`
---
-
-INSERT INTO `list` (`role`, `mail`, `id`, `data_reg`, `password`, `token`) VALUES
-('customer', 'orteip_94@live.it', 1, '2017-11-03', 'pietro123', NULL),
-('dealer', 'paolo_rossi@gmail.com', 2, '2017-11-06', 'paolo123', NULL);
-
--- --------------------------------------------------------
-
---
 -- Struttura della tabella `receipt`
 --
 
@@ -134,6 +111,29 @@ CREATE TABLE IF NOT EXISTS `staff` (
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- --------------------------------------------------------
+
+--
+-- Struttura della tabella `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `role` varchar(10) NOT NULL,
+  `mail` varchar(30) NOT NULL,
+  `id` int(11) NOT NULL,
+  `data_reg` date NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `token` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dump dei dati per la tabella `user`
+--
+
+INSERT INTO `user` (`role`, `mail`, `id`, `data_reg`, `password`, `token`) VALUES
+('customer', 'orteip_94@live.it', 1, '2017-11-03', 'pietro123', NULL),
+('dealer', 'paolo_rossi@gmail.com', 2, '2017-11-06', 'paolo123', NULL);
+
 --
 -- Indici per le tabelle scaricate
 --
@@ -157,13 +157,6 @@ ALTER TABLE `dealer`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indici per le tabelle `list`
---
-ALTER TABLE `list`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `mail` (`mail`);
-
---
 -- Indici per le tabelle `receipt`
 --
 ALTER TABLE `receipt`
@@ -174,6 +167,13 @@ ALTER TABLE `receipt`
 --
 ALTER TABLE `staff`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indici per le tabelle `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `mail` (`mail`);
 
 --
 -- AUTO_INCREMENT per le tabelle scaricate
@@ -195,11 +195,6 @@ ALTER TABLE `customer`
 ALTER TABLE `dealer`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT per la tabella `list`
---
-ALTER TABLE `list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
---
 -- AUTO_INCREMENT per la tabella `receipt`
 --
 ALTER TABLE `receipt`
@@ -209,6 +204,11 @@ ALTER TABLE `receipt`
 --
 ALTER TABLE `staff`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT per la tabella `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
