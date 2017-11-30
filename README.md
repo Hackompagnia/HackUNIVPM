@@ -9,6 +9,7 @@ Università Politecnica delle Marche<br><br>
 
 Gruppo di lavoro:
 ## L'Hackompagnia dell'anello
+<img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/Logo%20Gruppo/logo_gruppo.png"/>
 Bocci Francesco, Gurgoglione Luigi, Palloni Roberto, Polenta Andrea, Rignanese Pietro
 
 ## Obiettivo
