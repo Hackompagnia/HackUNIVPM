@@ -1,6 +1,6 @@
-# TrISS:Transazione Istantanea Senza Scontrino
-## Via la carta, non lo scontrino
+<img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/Triss_Logo/logo_master.png"/>
 
+## TrISS acronimo di Transazione Istantanea Senza Scontrino
 Project HackUNIVPM<br>
 
 Università Politecnica delle Marche<br><br>
