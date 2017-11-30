@@ -14,4 +14,4 @@ Bocci Francesco, Gurgoglione Luigi, Palloni Roberto, Polenta Andrea, Rignanese P
 
 
 <br>
-<img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/android_studio_logo.jpg/> <img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/logo_nfc_2.png/><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/univpm_logo_2.gif/> <img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/zend_logo.png/>
+<img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/android_studio_logo.jpg"/> <img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/logo_nfc_2.png"/><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/univpm_logo_2.gif"> <img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/zend_logo.png">
