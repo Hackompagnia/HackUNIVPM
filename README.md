@@ -1,4 +1,5 @@
-# TRiss
+# TRiss:TRansazione Istantanea Senza Scontrino
+## Via la carta, non lo scontrino
 
 Project HackUNIVPM<br>
 
