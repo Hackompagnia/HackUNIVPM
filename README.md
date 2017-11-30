@@ -25,6 +25,8 @@ Non solo un guadagno per l'ambiente, ma anche un guadagno per i commercianti e g
 ### Come ricevo la mia ricevuta/scontrino dopo l'acquisto?
 Il commerciante avrà un tablet e/o uno smartphone collegato alla sua cassa che, una volta effettuato il conteggio dei prodotti, produrra uno scontrino che verrà inviato all'acquirente tramite smartphone attraverso la tecnologia NFC.
 
+<img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Img/comunicazione%20applicazione.jpg"/>
+
 
 
 <a href="https://developer.android.com/studio/index.html"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/android_studio_logo.jpg"/></a><a href="https://it.wikipedia.org/wiki/Near_Field_Communication"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/logo_nfc_2.png"/></a><a href="http://www.univpm.it/Entra/"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/univpm_logo_2.gif"/></a><a href="https://framework.zend.com/"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/zend_logo.png"/></a><a href="https://www.phpmyadmin.net/"><img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Loghi/logo_phpmyadmin.png"/></a>
