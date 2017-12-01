@@ -43,9 +43,11 @@ e due che usufruiscono del servizio:
 
 <br>
 Ecco qualche screen della Web App:<br>
+
 ### Screen HomePage:
 <img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Img/screen_app/screen_home.png"/>
 <br>
+
 ### Screen Inserimento Utente per Admin:
 <img src="https://github.com/Hackompagnia/HackUNIVPM/blob/master/Img/screen_app/screen_admin.png"/>
 _________________________________________________________________________________________________________________________________
