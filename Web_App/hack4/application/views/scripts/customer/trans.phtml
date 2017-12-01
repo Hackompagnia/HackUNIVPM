@@ -1,0 +1,11 @@
+<div id="content">
+    <table>
+        <tr><th>PRODOTTO</th><th>PREZZO</th><th>DATA ACQUISTO</th><th>ORA ACQUISTO</th><th>NUM.</th><th>NEGOZIO</th></tr>
+        <?php foreach($this->scont as $scont)
+        {
+           echo "<tr><td>".$scont->prodotto."</td><td>".$scont->prezzo."</td><td>".$scont->data_acquisto."</td><td>".$scont->ora."</td><td>".$scont->sf_numero."</td><td>".$this->neg($scont->id_dealer)."</td></tr>";
+        }
+        
+        ?>
+    </table>
+</div>

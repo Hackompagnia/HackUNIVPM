@@ -1,0 +1,9 @@
+<div id="content">  
+    <table>
+        <tr><th>PRODOTTO</th><th>PREZZO</th><th>DATA ACQUISTO</th><th>ORA ACQUISTO</th><th>NUMERO SCONTRINO FISCALE</th><th>CLIENTE</th></tr>
+        <?php foreach ($this->scontrini as $scontrini){
+            echo"<tr><td>".$scontrini->prodotto."</td><td>".$scontrini->prezzo."</td><td>".$scontrini->data_acquisto."</td><td>".$scontrini->ora."</td><td>".$scontrini->sf_numero."</td><td>".$this->Mail($scontrini->id_customer)."</td></tr>";
+        }
+        ?>
+    </table>
+</div>
